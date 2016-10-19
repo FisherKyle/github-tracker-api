@@ -7,64 +7,63 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css"> -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
 
   <body>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center" id="header">enter a github user to display their repositories</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-offset-3 col-md-6">
-            <form role="form" id="username-submit">
-              <div class="form-group" type="text">
-                <div class="input-group input-group-lg form-group">
-                  <input type="text" id="username" class="form-control" placeholder="enter github user name" required>
 
-                  <span class="input-group-btn">
-                    <button class="btn btn-success" type="submit" id="username-button">search</button>
-                  </span>
+    <div class="section">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center" id="header">enter a github user name to display their repositories</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+              <form role="form" id="username-submit">
+                <div class="form-group" type="text">
+                  <div class="input-group input-group-lg form-group">
+                    <input type="text" id="username" class="form-control" placeholder="enter github user name" required>
+                    <span class="input-group-btn">
+                      <button class="btn btn-success" type="submit" id="username-button">search</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="section text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12" id="display-name">
+                  <p>
+                  </p>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
 
+          <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img id="display-avatar"></img>
+                </div>
 
-    <div class="section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12" id="display-name">
-            <p>
-            </p>
+                <div class="col-md-8 text-left" id="display-repos">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 text-center" id="display-avatar">
-            <p>
-            </p>
-          </div>
-          <div class="col-md-8 text-right" id="display-repos">
-            <p>
-            </p>
-
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
   </body>
 </html>
