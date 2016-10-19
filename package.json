@@ -1,8 +1,10 @@
 {
-  "name": "js-git-lookup",
+  "name": "git-lookup-js",
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
   "devDependencies": {
     "bower": "^1.7.9",
     "bower-files": "^3.14.1",
@@ -27,11 +29,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FisherKyle/js-git-lookup.git"
+    "url": "git+https://github.com/FisherKyle/git-lookup-js.git"
   },
   "bugs": {
-    "url": "https://github.com/FisherKyle/js-git-lookup/issues"
+    "url": "https://github.com/FisherKyle/git-lookup-js/issues"
   },
-  "homepage": "https://github.com/FisherKyle/js-git-lookup#readme",
+  "homepage": "https://github.com/FisherKyle/git-lookup-js#readme",
   "description": ""
 }

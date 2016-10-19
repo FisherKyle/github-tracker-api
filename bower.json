@@ -1,9 +1,9 @@
 {
-  "name": "js-git-lookup",
+  "name": "git-lookup-js",
   "description": "",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/FisherKyle/git-lookup-js",
   "ignore": [
     "**/.*",
     "node_modules",

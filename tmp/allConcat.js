@@ -1,19 +1,17 @@
-var Lookup = require('./../js/git-lookup-brains.js').lookupModule;
-var apiKey = require('./../.env');
+var Lookup = require('./../js/git-lookup.js').lookupModule;
 
-var displayRepos = function(username, repositories) {
-  $("#display-repos").text(username + " repositories:");
-}
+var username = $("#username").val();
 
 $(document).ready(function(){
 
   var currentLookup = new Lookup();
 
-  $('username-submit').click(function(){
+  $('#username-submit').submit(function(event){
     event.preventDefault();
 
     var username = $('#username').val();
 
-    currentLookup.lookupRepos(username, displayRepos);
+    currentLookup.lookupUser(username);
+    currentLookup.lookupRepos(username);
   });
 });
