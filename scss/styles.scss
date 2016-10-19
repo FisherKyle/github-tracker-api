@@ -1,0 +1,33 @@
+.section {
+  background-color: #d0d0df;
+  border-radius: 10px;
+}
+
+#display-avatar {
+  max-width: 249px;
+  max-height: 249px;
+  border-radius: 5px;
+  margin-top: 10%;
+  border: 2px solid #4c4f4c;
+  margin-left: 10%;
+}
+
+#repo-header {
+  margin-left: 12%;
+}
+
+h2, ul, #repo-header, #display-name, #header, #username-submit, #username-button {
+  font-family: "Arial Rounded MT Bold";
+  color: #4c4f4c;
+}
+
+#main {
+  background-color: black;
+  border-radius: 0px 0px 12px 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#form-adjust {
+  margin-right: 32%;
+}

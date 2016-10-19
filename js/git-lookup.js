@@ -1,5 +1,6 @@
 var apiKey = require('./../.env').apiKey;
 
+
 function Lookup(){
 }
 
@@ -8,16 +9,16 @@ Lookup.prototype.lookupUser = function(username) {
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
     $('#display-avatar').show();
     $('#display-repos').show();
-
     $('#display-name').text(response.login);
     $('#display-avatar').attr('src', response.avatar_url);
+    $('#header').hide();
 
   }).fail(function(error){
     $('#display-avatar').hide();
     $('#display-repos').hide();
     $("#display-name").text(error.responseJSON.message);
     $("#repo-header").text("No users found with that name, try again.");
-
+    $('#header').show();
   });
 }
 
@@ -36,7 +37,7 @@ Lookup.prototype.lookupRepos = function(username) {
   }
 
 }).fail(function(error){
-  // $("#repo-header").text("No repositories found.");
+  $("#repo-header").text("No repositories found.");
   console.log(error.responseJSON.message);
 
 });
