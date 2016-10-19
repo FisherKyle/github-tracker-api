@@ -4,32 +4,41 @@ function Lookup(){
 }
 
 Lookup.prototype.lookupUser = function(username) {
+
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
-    console.log("anything");
+    $('#display-avatar').show();
+    $('#display-repos').show();
+
     $('#display-name').text(response.login);
     $('#display-avatar').attr('src', response.avatar_url);
-  }).fail(function(error){
-    console.log(response);
-    console.log("anhything fail");
 
+  }).fail(function(error){
+    $('#display-avatar').hide();
+    $('#display-repos').hide();
     $("#display-name").text(error.responseJSON.message);
+    $("#repo-header").text("No users found with that name, try again.");
 
   });
 }
 
-  Lookup.prototype.lookupRepos = function(username) {
+Lookup.prototype.lookupRepos = function(username) {
+
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
-    console.log(response);
+
   $("#display-repos").text("");
   $("#username").val("");
 
   for( var index = 0; index<response.length; index++ ){
 
-    $("#display-repos").append("<ul><li class='displayed-name'>" + response[index].name + "<li class='displayed-date'> date created: " + response[index].created_at +  "<li class='displayed-description'>" + response[index].description + "</li></ul>" + "</li>");
+    $("#repo-header").text(" / / Repositories: ")
+
+    $("#display-repos").append("<ul><li id='displayed-name'><strong>project name: </strong>" + response[index].name + "<li id='displayed-description'><strong>description: </strong>" + response[index].description +  "<li id='displayed-date'><strong>created on:  </strong>" + response[index].created_at + "</li></ul>" + "</li></br>");
   }
+
 }).fail(function(error){
+  // $("#repo-header").text("No repositories found.");
   console.log(error.responseJSON.message);
+
 });
 }
 
