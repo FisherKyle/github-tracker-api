@@ -1,0 +1,37 @@
+{
+  "name": "js-git-lookup",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.17.3",
+    "browserify": "^13.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.8.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.3",
+    "sass": "^0.5.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FisherKyle/js-git-lookup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FisherKyle/js-git-lookup/issues"
+  },
+  "homepage": "https://github.com/FisherKyle/js-git-lookup#readme",
+  "description": ""
+}
