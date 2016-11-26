@@ -32,12 +32,18 @@ This is a website wherein a user is able to view github users' repositories simp
 ----
 ### **technologies Used**
 * javascript
-* github api
-* html
-* css-sass
-* bootstrap
+* github API
+* HTML
+* CSS
+* Bootstrap
 * npm
 * bower
+
+* jQuery
+* Bootstrap CDN
+* GitHub API
+* npm JS package manager
+* Bower package manager
 ----
 ### **license**
 
@@ -45,4 +51,4 @@ This is a website wherein a user is able to view github users' repositories simp
 
 ----
 ----
-**Copyright (c) 2016 [Lisa MacCarrigan](https://github.com/lisamaccarrigan)**
+**copyright (c) 2016 kyle fisher**
