@@ -2,6 +2,8 @@
 ##### _By Kyle Fisher // www.kylefisher.com // https://github.com/FisherKyle_
 #
 ----
+![sample screenshot](gitAPI.png)
+----
 ### **description**
 
 This is a website wherein a user is able to view github users' repositories simply by submitting the github username whose repositories they'd like to browse into a provided form.  
